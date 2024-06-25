@@ -36,11 +36,12 @@ async componentDidMount (){
 
 	render(){
 
-	const filterRobots=this.state.robots.filter((robot)=>{
+	 const robots=this.state.robots;
+	const filterRobots=robots.filter((robot)=>{
 		return robot.name.toLowerCase().includes(this.state.searchfield.toLowerCase());
 	})
 
-	if(this.state.robots.length===0)
+	if(robots.length===0)
 		{return <h1>Loading</h1>}
 		else{
 			return(
