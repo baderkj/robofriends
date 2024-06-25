@@ -47,7 +47,7 @@ async componentDidMount (){
 			return(
 		<>
 	 <div className="header">
-  	<h1>ROBOFRIENDS Bader</h1>
+  	<h1>ROBOFRIENDS </h1>
   </div>
   <Searchbox searchchange={this.onsearchchange}/>
   <div className="container">
